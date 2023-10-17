@@ -1,0 +1,7 @@
+header {
+}
+.title {
+  text-align: left;
+  font-size: 20px;
+  color: var(--white);
+}
