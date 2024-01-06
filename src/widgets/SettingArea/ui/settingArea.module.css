@@ -1,0 +1,28 @@
+.filters {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 280px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters > :first-child {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 440px) {
+}
+@media (min-width: 840px) {
+  .filters > :first-child {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .filters {
+    display: flex;
+    flex-direction: row;
+  }
+}
