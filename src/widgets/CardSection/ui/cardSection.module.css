@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+  gap: 20px 0;
+}
+@media (min-width: 280px) {
+  .wrapper {
+    grid-template-columns: none;
+  }
+}
+@media (min-width: 440px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, 400px);
+  }
+}
+@media (min-width: 840px) {
+}
+.gameNumberTitle {
+  font-size: 18px;
+  color: var(--accent);
+}
