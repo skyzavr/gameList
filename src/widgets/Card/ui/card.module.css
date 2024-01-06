@@ -1,0 +1,75 @@
+.wrapper {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+.wrapper:hover {
+  -webkit-box-shadow: 10px 10px 0px 0px var(--accent);
+  -moz-box-shadow: 10px 10px 0px 0px var(--accent);
+  box-shadow: 10px 10px 0px 0px var(--accent);
+  cursor: pointer;
+}
+.wrapper,
+.wrapper:hover {
+  transition: 0.5s ease-in;
+}
+/* Image section */
+.image {
+  position: relative;
+}
+.image > img {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+}
+.description {
+  line-height: 1.38;
+  padding: 40px 20px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 13, 19, 0.95);
+  color: #fff;
+}
+.image:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
+.description,
+.image:hover .description {
+  transition: opacity 0.5s, visibility 0.5s;
+}
+/* description section */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 280px) {
+  .section {
+    width: auto;
+  }
+}
+@media (min-width: 340px) {
+  .section {
+    width: 300px;
+  }
+}
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px;
+  width: 230px;
+  line-height: 1.3;
+}
