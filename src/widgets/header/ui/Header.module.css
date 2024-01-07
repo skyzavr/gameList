@@ -1,7 +1,23 @@
-header {
-}
 .title {
   text-align: left;
   font-size: 20px;
-  color: var(--white);
+  color: var(--accent);
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  transition: color ease-in-out 0.5s;
+}
+.title:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+.line {
+  background-color: var(--accent);
+  height: 0.2px;
+  width: 100%;
+}
+.topWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
