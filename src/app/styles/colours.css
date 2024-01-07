@@ -1,5 +1,14 @@
-:root {
-  --white: #ffffff;
-  --dark-blue: #0a111d;
-  --black: #0a0d13;
+:root[color-scheme='dark'] {
+  --main-colour: #0a111d;
+  --accent: #ffffff;
+  --add-colour: #0a0d13;
+  --blue: #2a89f1;
+  --invert: 0;
+}
+:root[color-scheme='light'] {
+  --main-colour: #ffffff;
+  --accent: #1b1a1d;
+  --add-colour: #0a0d13;
+  --blue: #2a89f1;
+  --invert: 1;
 }
