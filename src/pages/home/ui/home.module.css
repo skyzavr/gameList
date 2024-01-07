@@ -1,0 +1,35 @@
+.wrapper {
+  padding: 20px;
+}
+.searchArea {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.searchArea > :last-child {
+  margin-left: 20px;
+}
+
+@media (min-width: 280px) {
+  .searchArea {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchArea > :first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 840px) {
+  .searchArea > :first-child {
+    margin-bottom: 0;
+  }
+
+  .searchArea {
+    display: flex;
+    flex-direction: row;
+  }
+}
