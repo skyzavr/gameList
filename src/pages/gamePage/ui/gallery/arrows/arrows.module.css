@@ -1,0 +1,21 @@
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.arrows > div > svg > path {
+  stroke: var(--accent);
+  transition: stroke ease-in-out 0.3s;
+}
+.disabled > svg > path {
+  stroke: var(--accent);
+  opacity: 0.5;
+}
+.arrows > div:not(.disabled):hover svg > path {
+  stroke: var(--blue);
+  cursor: pointer;
+}
+.arrows > div:not(.disabled):hover {
+  cursor: pointer;
+}

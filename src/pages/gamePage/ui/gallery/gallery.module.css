@@ -1,0 +1,59 @@
+.frame {
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 320px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (min-width: 450px) {
+  .frame {
+    width: 400px;
+  }
+  .wrapper {
+    width: 400px;
+  }
+}
+
+.frame > img {
+  width: 100%;
+}
+
+.active {
+  background-color: var(--accent);
+  opacity: 1;
+}
+.dots {
+  display: flex;
+  flex-direction: row;
+}
+.dots > div {
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.dots > div:not(.active) {
+  background: var(--accent);
+  opacity: 0.5;
+  transition: background ease-in-out 0.3s;
+}
+
+.dots > div:hover {
+  background-color: var(--blue);
+  cursor: pointer;
+}
+.imgNum {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: rgb(0 0 0 / 21%);
+  padding: 5px;
+  border-radius: 5px;
+}
