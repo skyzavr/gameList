@@ -8,12 +8,20 @@ export const useFetch = (api: string) => {
   const [error, setError] = useState<string>('');
   const [data, setData] = useState<TGame>([]);
 
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'e7c7b757e6msh67376215a727ea8p182a47jsnce5d361246ac',
+      'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
+    },
+  };
+
   const getData = async () => {
     try {
       setIsLoading(true);
       setIsError(false);
       setError('');
-      const res = await fetch(api);
+      const res = await fetch(api, options);
       if (!res.ok) throw new Error(`Something went wrong`);
       const data = (await res.json()) as TGame;
       setData(data);

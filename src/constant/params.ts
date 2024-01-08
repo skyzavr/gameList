@@ -32,7 +32,7 @@ export const GenreParam: IOptions[] = [
   { id: 16, name: 'Fantasy', value: GenreParams.FANTASY },
 ];
 
-export const API = 'https://www.freetogame.com/api/';
+export const API = 'https://free-to-play-games-database.p.rapidapi.com/api';
 
 export type Game = {
   id: string;
